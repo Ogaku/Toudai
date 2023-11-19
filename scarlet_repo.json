@@ -6,7 +6,7 @@
   "Other": [
     {
       "name": "Oshi",
-      "version": "",
+      "version": "1.0.20231119",
       "icon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
       "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
       "description": "The Hoshi of Oshi's",
