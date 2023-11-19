@@ -45,6 +45,15 @@ jobs:
           $a.apps[0].versions[0].size = ${{ steps.release.outputs.size  }}
           $a | ConvertTo-Json -depth 32 | set-content ./altstore_repo.json
 
+      - name: Update the e-Sign repo
+        shell: pwsh
+        run: |
+          $a = Get-Content ./esign_repo.json -raw | ConvertFrom-Json
+          $a.apps[0].version = "${{ steps.release.outputs.tag  }}"
+          $a.apps[0].versionDate = "${{ steps.release.outputs.date  }}"
+          $a.apps[0].size = ${{ steps.release.outputs.size  }}
+          $a | ConvertTo-Json -depth 32 | set-content ./esign_repo.json
+
       - name: Push changes to the repo
         run: |
           git config user.name 'github-actions[bot]'
