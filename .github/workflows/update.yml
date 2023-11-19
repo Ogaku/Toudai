@@ -25,9 +25,9 @@ jobs:
         shell: pwsh
         run: |
           $json = (Invoke-WebRequest "https://api.github.com/repos/Ogaku/Oshi/releases/latest").Content  | ConvertFrom-Json
-          Write-Output "{tag}={$($json.tag_name.Substring(0, $json.tag_name.LastIndexOf(".")))}" >> $GITHUB_OUTPUT
-          Write-Output "{date}={$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].created_at.ToString("yyyy-MM-ddTHH:mm:ssZ"))}" >> $GITHUB_OUTPUT
-          Write-Output "{size}={$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].size)}" >> $GITHUB_OUTPUT
+          echo "tag=$($json.tag_name.Substring(0, $json.tag_name.LastIndexOf(".")))" >> $GITHUB_OUTPUT
+          echo "date=$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].created_at.ToString("yyyy-MM-ddTHH:mm:ssZ"))" >> $GITHUB_OUTPUT
+          echo "size=$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].size)" >> $GITHUB_OUTPUT
 
       - name: Update the Scarlet repo
         shell: pwsh
