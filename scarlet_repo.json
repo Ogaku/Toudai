@@ -11,11 +11,7 @@
       "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
       "description": "The Hoshi of Oshi's",
       "bundleID": "com.ogaku.oshi",
-      "appstore": "com.ogaku.oshi",
-      "category": "Tweaked Apps",
-      "contact": {
-          "web": "https://github.com/Ogaku"
-      }
+      "category": "Tweaked Apps"
     }
   ]
 }
