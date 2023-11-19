@@ -1,0 +1,53 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Update
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [update-event]
+
+permissions: write-all
+
+jobs:
+  update:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check out Oshi's releases
+        id: release
+        shell: pwsh
+        run: |
+          $json = (Invoke-WebRequest "https://api.github.com/repos/Ogaku/Oshi/releases/latest").Content  | ConvertFrom-Json
+          Write-Output "{tag}={$($json.tag_name.Substring(0, $json.tag_name.LastIndexOf(".")))}" >> $GITHUB_OUTPUT
+          Write-Output "{date}={$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].created_at.ToString("yyyy-MM-ddTHH:mm:ssZ"))}" >> $GITHUB_OUTPUT
+          Write-Output "{size}={$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].size)}" >> $GITHUB_OUTPUT
+
+      - name: Update the Scarlet repo
+        shell: pwsh
+        run: |
+          $a = Get-Content ./scarlet_repo.json -raw | ConvertFrom-Json
+          $a.Other[0].version = "${{ steps.release.outputs.tag }}"
+          $a | ConvertTo-Json -depth 32 | set-content ./scarlet_repo.json
+
+      - name: Update the AltStore repo
+        shell: pwsh
+        run: |
+          $a = Get-Content ./altstore_repo.json -raw | ConvertFrom-Json
+          $a.apps[0].versions[0].version = "${{ steps.release.outputs.tag  }}"
+          $a.apps[0].versions[0].date = "${{ steps.release.outputs.date  }}"
+          $a.apps[0].versions[0].size = ${{ steps.release.outputs.size  }}
+          $a | ConvertTo-Json -depth 32 | set-content ./altstore_repo.json
+
+      - name: Push changes to the repo
+        run: |
+          git add .
+          git commit -m "Updated store repositories"
+          git fetch origin main
+          git push origin main
