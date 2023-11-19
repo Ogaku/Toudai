@@ -1,19 +1,18 @@
 {
-    "META": {
-      "repoName": "Oshi Repo for Scarlet",
-      "repoIcon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true"
-    },
-    "Other": [
-      {
-        "name": "Oshi",
-        "version": "1.0.20231118",
-        "icon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
-        "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
-        "description": "The Hoshi of Oshi's",
-        "bundleID": "com.ogaku.oshi",
-        "category": "Alpha",
-        "changelog": ""
-      }
-    ]
-  }
-  
+  "META": {
+    "repoName": "Oshi Repo for Scarlet",
+    "repoIcon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true"
+  },
+  "Other": [
+    {
+      "name": "Oshi",
+      "version": "",
+      "icon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
+      "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
+      "description": "The Hoshi of Oshi's",
+      "bundleID": "com.ogaku.oshi",
+      "category": "Alpha",
+      "changelog": ""
+    }
+  ]
+}

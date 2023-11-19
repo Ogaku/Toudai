@@ -1,28 +1,27 @@
 {
-    "name": "Oshi repository for AltStore",
-    "identifier": "com.ogaku.AltStore.Oshi",
-    "apps": [
-      {
-        "name": "Oshi",
-        "bundleIdentifier": "com.ogaku.oshi",
-        "developerName": "Ogaku Team",
-        "localizedDescription": "",
-        "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
-        "versions": [
-          {
-            "version": "1.0.20231118",
-            "date": "2023-11-18T22:30:55Z",
-            "localizedDescription": "",
-            "minOSVersion": "11",
-            "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
-            "size": 74198855
-          }
-        ],
-        "subtitle": "The Hoshi of Oshi's",
-        "tintColor": "bc70e0",
-        "screenshotURLs": []
-      }
-    ],
-    "news": []
-  }
-  
+  "name": "Oshi repository for AltStore",
+  "identifier": "com.ogaku.AltStore.Oshi",
+  "apps": [
+    {
+      "name": "Oshi",
+      "bundleIdentifier": "com.ogaku.oshi",
+      "developerName": "Ogaku Team",
+      "localizedDescription": "",
+      "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
+      "versions": [
+        {
+          "version": "",
+          "date": "",
+          "localizedDescription": "",
+          "minOSVersion": "11",
+          "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
+          "size": 74198855
+        }
+      ],
+      "subtitle": "The Hoshi of Oshi's",
+      "tintColor": "bc70e0",
+      "screenshotURLs": []
+    }
+  ],
+  "news": []
+}
