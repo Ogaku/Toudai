@@ -24,7 +24,7 @@ jobs:
         id: release
         shell: pwsh
         run: |
-          $json = (Invoke-WebRequest "https://api.github.com/repos/Ogaku/Oshi/releases/latest").Content  | ConvertFrom-Json
+          $json = (Invoke-RestMethod "https://api.github.com/repos/Ogaku/Oshi/releases/latest" -Method Get -Headers @{"Authorization" = "Bearer ${{ secrets.GITHUB_TOKEN }}"})
           echo "tag=$($json.tag_name.Substring(0, $json.tag_name.LastIndexOf(".")))" >> $env:GITHUB_OUTPUT
           echo "date=$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].created_at.ToString("yyyy-MM-ddTHH:mm:ssZ"))" >> $env:GITHUB_OUTPUT
           echo "size=$(($json.assets | Where-Object { $_.name.Contains(".ipa") })[0].size)" >> $env:GITHUB_OUTPUT
