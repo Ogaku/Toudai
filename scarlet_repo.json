@@ -3,7 +3,7 @@
     "repoName": "Oshi Repo for Scarlet",
     "repoIcon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true"
   },
-  "Other": [
+  "Games": [
     {
       "name": "Oshi",
       "version": "1.0.20231119",
@@ -11,8 +11,21 @@
       "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
       "description": "The Hoshi of Oshi's",
       "bundleID": "com.ogaku.oshi",
+      "appstore": "com.ogaku.oshi",
       "category": "Alpha",
       "changelog": ""
+    }
+  ],
+  "Other": [
+    {
+      "name": "Scarlet",
+      "version": "1.0",
+      "icon": "https://usescarlet.com/icon.png",
+      "down": "https://resources.usescarlet.com/repo/IPAs/ScarletAlpha.ipa",
+      "description": "This is the standard version of Scarlet. Allowing you to tweak and sideload your apps along with import your own certificates or use with a paid developer account entirely computerless.",
+      "bundleID": "com.DebianArch.Scarlet",
+      "category": "Alpha",
+      "changelog": "- Added fakesign support\n-Added back SSL install support."
     }
   ]
 }

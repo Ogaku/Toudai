@@ -1,22 +1,22 @@
 {
-    "name": "Oshi Repo for e-sign",
-    "identifier": "ogaku.oshi.esign",
-    "sourceURL": "https://github.com/Ogaku/Toudai/apps.json",
-    "apps": [
-        {
-            "name": "Oshi",
-            "bundleIdentifier": "com.ogaku.oshi",
-            "developerName": "Ogaku Team",
-            "version": "1.0.20231119",
-            "versionDate": "2023-11-19T11:39:01Z",
-            "versionDescription": "",
-            "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
-            "localizedDescription": "The Hoshi of Oshi's",
-            "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
-            "tintColor": "bc70e0",
-            "isLanZouCloud": 0,
-            "size": 7206362,
-            "type": 1
-        }
-    ]
+  "name": "Oshi Repo for e-sign",
+  "identifier": "ogaku.oshi.esign",
+  "sourceURL": "https://github.com/Ogaku/Toudai/apps.json",
+  "apps": [
+    {
+      "name": "Oshi",
+      "bundleIdentifier": "com.ogaku.oshi",
+      "developerName": "Ogaku Team",
+      "version": "1.0.20231119",
+      "versionDate": "2023-11-19T11:39:01Z",
+      "versionDescription": "",
+      "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
+      "localizedDescription": "The Hoshi of Oshi's",
+      "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
+      "tintColor": "bc70e0",
+      "isLanZouCloud": 0,
+      "size": 74217360,
+      "type": 1
+    }
+  ]
 }
