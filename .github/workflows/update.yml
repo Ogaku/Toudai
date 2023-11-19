@@ -33,7 +33,7 @@ jobs:
         shell: pwsh
         run: |
           $a = Get-Content ./scarlet_repo.json -raw | ConvertFrom-Json
-          $a.Games[0].version = "${{ steps.release.outputs.tag }}"
+          $a.Tweaked[0].version = "${{ steps.release.outputs.tag }}"
           $a | ConvertTo-Json -depth 32 | set-content ./scarlet_repo.json
 
       - name: Update the AltStore repo

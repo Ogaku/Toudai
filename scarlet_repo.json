@@ -3,7 +3,7 @@
     "repoName": "Oshi Repo for Scarlet",
     "repoIcon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true"
   },
-  "Games": [
+  "Tweaked": [
     {
       "name": "Oshi",
       "version": "1.0.20231119",
@@ -12,7 +12,7 @@
       "description": "The Hoshi of Oshi's",
       "bundleID": "com.ogaku.oshi",
       "appstore": "com.ogaku.oshi",
-      "category": "Alpha",
+      "category": "Tweaked Apps",
       "changelog": ""
     }
   ],
