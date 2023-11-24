@@ -10,12 +10,12 @@
       "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
       "versions": [
         {
-          "version": "1.0.20231123",
-          "date": "2023-11-23T22:09:32Z",
+          "version": "1.0.20231124",
+          "date": "2023-11-24T07:54:11Z",
           "localizedDescription": "",
           "minOSVersion": "11",
           "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
-          "size": 76939447
+          "size": 76939508
         }
       ],
       "subtitle": "The Hoshi of Oshi's",
