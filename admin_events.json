@@ -1,10 +1,10 @@
 {
     "admin_events": [
         {
-            "start": "2023-06-21T21:37:00.000Z",
-            "end": "2023-06-21T22:37:00.000Z",
+            "start": "2024-06-21T21:37:00.000Z",
+            "end": "2024-06-21T22:37:00.000Z",
             "title": {
-                "en": "The end of the 2023/2024 school year",
+                "en": "End of the 2023/2024 school year",
                 "pl": "Koniec roku szkolnego 2023/2024"
             },
             "description": {
