@@ -1,0 +1,16 @@
+{
+    "admin_events": [
+        {
+            "start": "2023-06-21T21:37:00.000Z",
+            "end": "2023-06-21T22:37:00.000Z",
+            "title": {
+                "en": "The end of the 2023/2024 school year",
+                "pl": "Koniec roku szkolnego 2023/2024"
+            },
+            "description": {
+                "en": "Have fun during summer holidays!",
+                "pl": "Zabaw się trochę podczas wakacji!"
+            }
+        }
+    ]
+}
