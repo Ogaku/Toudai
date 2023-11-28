@@ -11,11 +11,11 @@
       "versions": [
         {
           "version": "1.0.20231128",
-          "date": "2023-11-28T06:46:22Z",
+          "date": "2023-11-28T06:50:33Z",
           "localizedDescription": "",
           "minOSVersion": "11",
           "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
-          "size": 77057306
+          "size": 77057292
         }
       ],
       "subtitle": "The Hoshi of Oshi's",
