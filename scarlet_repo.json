@@ -6,7 +6,7 @@
   "Tweaked": [
     {
       "name": "Oshi",
-      "version": "1.0.20231210",
+      "version": "1.0.20231211",
       "icon": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
       "down": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
       "category": "Tweaked Apps",
