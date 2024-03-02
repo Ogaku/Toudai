@@ -7,15 +7,15 @@
       "name": "Oshi",
       "bundleIdentifier": "com.ogaku.oshi",
       "developerName": "Ogaku Team",
-      "version": "1.0.20240227",
-      "versionDate": "2024-02-27T06:55:53Z",
+      "version": "1.0.20240302",
+      "versionDate": "2024-03-02T16:51:48Z",
       "versionDescription": "",
       "downloadURL": "https://github.com/Ogaku/Oshi/releases/latest/download/Oshi.ipa",
       "localizedDescription": "The Hoshi of Oshi's",
       "iconURL": "https://github.com/Ogaku/Oshi/blob/main/ios/Runner/Assets.xcassets/iTunesArtwork@1x.png?raw=true",
       "tintColor": "bc70e0",
       "isLanZouCloud": 0,
-      "size": 25389323,
+      "size": 25429219,
       "type": 1
     }
   ]
